@@ -1,0 +1,18 @@
+radius: 20.0                   # how far the sonar scanner can see
+horizontal_FOV: 360.0          # Horizontal field of view of the sonar scanner in degrees
+intensity_threshold: 50        # threshold to detect obstacle from sonar image
+odom_distance_threshold: 0.5   # distance threshold to take new scan
+odom_angle_threshold: 0.7      # rotation threshold to take new scan
+min_sonar_range: 1.5           # This the minimum range the sonar scanner can detect
+algorithm: "pic"               # scan-mathing algorithms= icp, gicp, gmm, pIC
+num_points_per_beam: 1         # number strong (n-highest intensity) pixels to be considered as valid responses ... others will be suppressed  
+sonar_noise: 0.1               # Noise of the sonar sensor
+confidence_level: 0.68         # Test for scan-matching measurement compatibility.
+loop_closure_confi_level: 0.68 # Confidence level indicating loop closure between two poses.
+sonar_roll_orientation: 0.0    # Roll of the sonar in the body frame. For fls use 0.12 and MSIS use 0.0
+sonar_x_position: 0.8          # x axis position of the sonar in the girona500/base_link frame
+sonar_y_position: 0.0          # y axis position of the sonar in the girona500/base_link frame
+source_index: 0.0              # Index of the source pose if loop closure is detected
+target_index: 0.0              # Index of the target pose if loop closure is detected
+loop_closure_detected: 0       # Flag to indicate if loop closure is detected or not .... 0->false, 1->true
+kill_node: 0
