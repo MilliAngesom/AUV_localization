@@ -104,13 +104,13 @@ void polarToCartesian(cv::Mat& raw_image, const float& radius, const float& hori
                 float angle = -0.5 * horizontal_FOV + fov_per_pixel * (j + 0.5f);
                 angle = angle * deg_to_rad; // Convert to radians
 
-                // Used For Simulation
-                float x_ = r * std::cos(sonar_roll)*std::cos(angle) + sonar_x_position;
-                float y_ = r * std::cos(sonar_roll)*std::sin(angle) + sonar_y_position;
-
-                // // For the bag file
+                // // Used For Simulation
                 // float x_ = r * std::cos(sonar_roll)*std::cos(angle) + sonar_x_position;
-                // float y_ = -r * std::cos(sonar_roll)*std::sin(angle) + sonar_y_position;
+                // float y_ = r * std::cos(sonar_roll)*std::sin(angle) + sonar_y_position;
+
+                // For the bag file
+                float x_ = r * std::cos(sonar_roll)*std::cos(angle) + sonar_x_position;
+                float y_ = -r * std::cos(sonar_roll)*std::sin(angle) + sonar_y_position;
 
 
                 x.push_back(x_);

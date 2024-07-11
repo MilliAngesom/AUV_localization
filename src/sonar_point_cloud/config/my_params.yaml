@@ -3,7 +3,7 @@ horizontal_FOV: 360.0          # Horizontal field of view of the sonar scanner i
 intensity_threshold: 50        # threshold to detect obstacle from sonar image
 odom_distance_threshold: 0.5   # distance threshold to take new scan
 odom_angle_threshold: 0.7      # rotation threshold to take new scan
-min_sonar_range: 1.5           # This the minimum range the sonar scanner can detect
+min_sonar_range: 0.5           # This the minimum range the sonar scanner can detect
 algorithm: "pic"               # scan-mathing algorithms= icp, gicp, gmm, pIC
 num_points_per_beam: 1         # number strong (n-highest intensity) pixels to be considered as valid responses ... others will be suppressed  
 sonar_noise: 0.1               # Noise of the sonar sensor
