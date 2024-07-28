@@ -1,4 +1,4 @@
-# AUV Localization with MSIS Sonar Scanner
+# AUV Localization Using MSIS Sonar Scanner
 
 ## Overview
 This project aims to localize Autonomous Underwater Vehicles (AUVs) using an MSIS sonar scanner within a Pose Graph SLAM framework. It utilizes the GTSAM library to handle the graph operations and incorporates four scan matching algorithms: ICP, GICP, GMM, and pIC. The Girona500 AUV model is used for simulation purposes.
